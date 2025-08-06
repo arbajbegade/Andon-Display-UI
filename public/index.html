@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operation Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="datetime">
+                <span id="date">2025-07-30</span>
+            </div>
+            <h1>OPERATION</h1>
+            <div class="datetime">
+                <span id="time">09:15:44</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="main-container">
+                <div class="label">MODEL NO</div>
+                <div class="value" id="model">Model Name</div>
+                <div class="label">TARGET</div>
+                <div class="value" id="target"></div>
+
+                <div class="label">STOPPAGE</div>
+                <div class="value" id="stoppage"></div>
+                <div class="label">ACTUAL</div>
+                <div class="value" id="actual"></div>
+
+                <div class="label">CYCLE TIME</div>
+                <div class="value" id="cycle"></div>
+                <div class="label">DIFFERENCE</div>
+                <div class="value" id="difference"></div>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Stations</th>
+                        <th>Seconds</th>
+                        <th>Stations</th>
+                        <th>Seconds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><span id="station_1"></span></td>
+                        <td>7</td>
+                        <td><span id="station_7"></span></td>
+                    </tr>
+                    <td>2</td>
+                    <td><span id="station_2"></span></td>
+                    <td>8</td>
+                    <td><span id="station_8"></span></td>
+                    </tr>
+                    <td>3</td>
+                    <td><span id="station_3"></span></td>
+                    <td>9</td>
+                    <td><span id="station_9"></span></td>
+                    </tr>
+                    <td>4</td>
+                    <td><span id="station_4"></span></td>
+                    <td>10</td>
+                    <td><span id="station_10"></span></td>
+                    </tr>
+                    <td>5</td>
+                    <td><span id="station_5"></span></td>
+                    <td>11</td>
+                    <td><span id="station_11"></span></td>
+                    </tr>
+                    </tr>
+                    <td>6</td>
+                    <td><span id="station_6"></span></td>
+                    <td>12</td>
+                    <td><span id="station_12"></span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
