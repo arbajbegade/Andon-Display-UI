@@ -53,6 +53,7 @@ html {
     flex-grow: 1;
     white-space: nowrap;
 }
+
 /* --------------------------------------------------- */
 .main-content {
     display: flex;
@@ -61,33 +62,74 @@ html {
     flex-grow: 1;
     overflow-y: hidden;
 }
+.main-container {
+    font-size: 3.5rem;
+    margin: auto;
+    padding: 3px;
+    border-radius: 12px;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
 
-.main-container{
-    font-size: 2.2rem;
+.station-info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2px;
-    margin: auto;
-    padding: 5px;
-    border-radius: 12px;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-  }
+}
 
-  .label, .value {
-    padding: 15px 5px;
+.stations-data {
+    display: flex;
+    gap: 2px;
+}
+
+.label,
+.value {
+    padding: 20px 15px;
     font-weight: 600;
     border-radius: 8px;
     text-align: center;
-  }
+}
 
-  .label {
-    background-color: #2e2e3e;
-  }
+.m_name,
+.m_value {
+    background-color: rgb(226, 226, 226);
+}
 
-  .value {
-    background-color: #3a3a4f;
-  }
+.t_name,
+.t_value {
+    min-width: 27rem;
+    background-color: rgb(246, 246, 25);
+}
+
+.s_name,
+.s_value {
+    min-width: 27rem;
+    background-color: #dd2d4a;
+}
+
+.a_name,
+.a_value {
+    min-width: 27rem;
+    background-color: lightgreen;
+}
+
+.c_name,
+.c_value {
+    min-width: 27rem;
+    background-color: rgb(35, 218, 243);
+}
+
+.d_name,
+.d_value {
+    background-color: rgb(226, 226, 226);
+    width: 30rem;
+}
+
 /* ---------------------------------------------------- */
 
 .table-container {
@@ -97,7 +139,7 @@ html {
 
 .styled-table {
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 4rem;
     color: black;
     width: 100%;
     border-collapse: collapse;
@@ -106,15 +148,16 @@ html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
+
 th {
-  padding: 4px 6px;
-  text-align: left;
-  border: 1px solid #ddd;
+    padding: 4px 6px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
 .styled-table th,
 .styled-table td {
-     padding: 4px 6px;
+    padding: 4px 6px;
     border: 1px solid #ddd;
 }
 
